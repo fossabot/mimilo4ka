@@ -42,10 +42,10 @@ function assemble(statements) {
 }
 
 var statements = [
-  "Wake up, Neo...",
-  "The Matrix has you...",
-  "Follow the white rabbit.",
-  "Knock, knock, Neo."
+  "Knock, Knock, Lu...",
+  "Happy Birthday to you...",
+  "Wish the best of luck to you...",
+  ""
 ]
 
 function rand(min, max) {
