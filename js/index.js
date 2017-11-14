@@ -10,22 +10,22 @@ var ctx = cvs.getContext('2d');
 
 // Set font, size & number of columns
 var font = 'arial';
-var fontSize = 18;
+var fontSize = 10;
 ctx.font = fontSize + 'px ' + font;
 var cols = cvs.width / fontSize;
 
 // Characters
 var charSet;
-charSet = 'mimilo4ka'; // Hex
+charSet = '0123456789ABCDEF'; // Hex
 charSet = charSet.split(''); // Convert string to array
 
 // One drop per column, row set randomly
 var drops = [];
 for (var col = 0; col < cols; col++)
   drops[col] = Math.floor(Math.random() * cvs.height);
-    
+
 // Call rain() every 25ms
-setInterval(rain, 225);
+setInterval(rain, 25);
 
 function rain() {
   // Background, black, translucent
@@ -57,4 +57,3 @@ function randColour()
     Math.floor(Math.random() * 256) + ',' + 
     Math.floor(Math.random() * 256) + ')';
 }
-
