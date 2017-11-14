@@ -43,9 +43,9 @@ function assemble(statements) {
 
 var statements = [
   "Knock, Knock, Lu...",
-  "Happy Birthday to you...",
+  "Happy Birthday to you!",
   "Wish the best of luck to you...",
-  ""
+  ";)"
 ]
 
 function rand(min, max) {
