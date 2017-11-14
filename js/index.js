@@ -75,13 +75,13 @@ var ctx = cvs.getContext('2d');
 
 // Set font, size & number of columns
 var font = 'arial';
-var fontSize = 10;
+var fontSize = 18;
 ctx.font = fontSize + 'px ' + font;
 var cols = cvs.width / fontSize;
 
 // Characters
 var charSet;
-charSet = '0123456789ABCDEF'; // Hex
+charSet = 'mimilo4ka'; // Hex
 charSet = charSet.split(''); // Convert string to array
 
 // One drop per column, row set randomly
