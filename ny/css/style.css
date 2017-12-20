@@ -1,0 +1,32 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00001C), to(#00000C));
+  background: linear-gradient(#00001C, #00000C);
+  color: white;
+  font-family: 'Petit Formal Script', cursive;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+.content .title {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+  z-index: 0;
+  font-size: 1.5em;
+}
+.content .title svg {
+  display: block;
+  max-width: 100%;
+}
+.content .title h2 {
+  text-align: left;
+}
+.content .title h2:nth-of-type(2) {
+  margin-left: 2em;
+}
