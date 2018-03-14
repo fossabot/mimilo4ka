@@ -1,7 +1,98 @@
 body {
-  margin: 0px;
-  background: #000;
+  background: #ffbada;
+  background-image: radial-gradient(ellipse at center, #FFE2F0 0%, #ffbada 100%);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
 
+.iwd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
 
-.topic { font-size: 100px; text-decoration: none; }
+.iwd__title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.iwd__btn {
+  font: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: #FF4DA0;
+  color: #fff;
+  border: 0;
+  padding: 1rem;
+  margin: 2rem 0 .5rem;
+  outline: 0;
+  -webkit-transition: background 140ms;
+  transition: background 140ms;
+}
+.iwd__btn:active {
+  background: #FF0076;
+}
+
+@-webkit-keyframes showAndHide {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
+}
+
+@keyframes showAndHide {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-1vh);
+            transform: translateY(-1vh);
+  }
+}
+.flower {
+  font-size: 124px;
+  -webkit-animation-name: showAndHide;
+          animation-name: showAndHide;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  position: absolute;
 }

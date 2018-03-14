@@ -1,0 +1,42 @@
+let flowers;
+let frequency = 200;
+
+function startThisShit() {
+  flowers = setInterval(() => {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+    flower.style.left = `${Math.random() * 100}vw`;
+    flower.style.top = `${Math.random() * 100}vh`;
+    flower.innerHTML = '🌸';
+    document.body.appendChild(flower);
+    flower.addEventListener('animationend', () => {
+      flower.remove();
+    })
+  }, frequency);
+}
+
+function stopThisShit() {
+  clearInterval(flowers);
+}
+
+
+const doc = document.body;
+const btn = document.querySelector('.js-btn');
+const range = document.querySelector('.js-range');
+
+doc.addEventListener('keydown', e => {
+  if(e.keyCode === 32 && e.repeat === false) {
+    startThisShit();
+  }
+});
+doc.addEventListener('keyup', e => {
+  if(e.keyCode === 32) {
+    stopThisShit();
+  }
+});
+btn.addEventListener('mousedown', startThisShit);
+btn.addEventListener('mouseup', stopThisShit);
+range.addEventListener('change', () => {
+  frequency = 1000 / range.value;
+});
+

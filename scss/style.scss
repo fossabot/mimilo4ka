@@ -1,39 +1,69 @@
-/* The version of Bourbon used in this Pen was 4.* */
-@import "bourbon";
-
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
-
-$text-color: #9F9;
-$shadow: #0F0;
-
 body {
-  background: #010;
-  @include filter(blur(1px));
+  background: #ffbada;
+  background-image: radial-gradient(ellipse at center, #FFE2F0 0%, #ffbada 100%);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, .3);
+  position: relative;
   overflow: hidden;
 }
 
-.scanlines {
-  pointer-events: none; // Thanks to  @long-lazuli for this tip.
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  
-  // @ryanmcnz thought this bit up.
-  @include background-image(linear-gradient(#020 0%, transparent 25%));
-	background-size: 4px 4px;
+.iwd {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
-.editor-text {
-  color: $text-color;
-  font-size: 3em;
-  text-shadow: 1px 0px 5px $shadow, 
-    -1px 0px 2px $shadow;
-    
-  font-family: Ubuntu Mono;
-  font-weight: light;
-  line-height: 2em;
+.iwd__title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.iwd__btn {
+  font: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: #FF4DA0;
+  color: #fff;
+  border: 0;
+  padding: 1rem;
+  margin: 2rem 0 .5rem;
+  outline: 0;
+  transition: background 140ms;
   
-  margin: 100px;
+  &:active {
+    background: #FF0076;
+  }
+}
+
+@keyframes showAndHide {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+    transform: translateY(-1vh);
+  }
+}
+
+.flower {
+  font-size: 124px;
+  animation-name: showAndHide;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+  position: absolute;
 }
